@@ -5,21 +5,11 @@ public class Asteroide extends Objeto{
         super(direccion, posX, posY);
     }
 
+
     @Override
     public void cambiarPosicion(int x, int y, char direccion) {
-        switch (direccion){
-            case 'N':
-                int position = getDireccion();
-
-                while (direccion != x){
-                    direccion++;
-                }
-
-                setDireccion(direccion);
-            case 'S':;
-            case 'E':;
-            case 'O':;
-        }
+        setPosX( x );
+        setPosY( y );
     }
 
     @Override

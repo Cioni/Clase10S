@@ -20,6 +20,9 @@ public class Nave extends Objeto{
     @Override
     public void cambiarPosicion(int x, int y, char direccion){
         System.out.println("cambiar posicion");
+        rotar( direccion );
+        setPosX(x);
+        setPosY(y);
     }
 
     public void rotar(char direccion){
@@ -27,7 +30,7 @@ public class Nave extends Objeto{
     }
 
     public void vidaPerdida(int daño){
-
+        setVida( getVida() - daño);
     }
 
 
